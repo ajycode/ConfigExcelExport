@@ -1,0 +1,9 @@
+E:\GitHubProjects\ExcelToLua\ExcelToLua\bin\Debug\ExcelToLua.exe.config
+E:\GitHubProjects\ExcelToLua\ExcelToLua\bin\Debug\ExcelToLua.exe
+E:\GitHubProjects\ExcelToLua\ExcelToLua\bin\Debug\ExcelToLua.pdb
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.csprojResolveAssemblyReference.cache
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.Form1.resources
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.Properties.Resources.resources
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.csproj.GenerateResource.Cache
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.exe
+E:\GitHubProjects\ExcelToLua\ExcelToLua\obj\Debug\ExcelToLua.pdb

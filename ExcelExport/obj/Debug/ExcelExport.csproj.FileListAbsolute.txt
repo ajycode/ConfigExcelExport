@@ -1,0 +1,13 @@
+E:\GitHubProjects\ExcelExport\ExcelToLua\bin\Debug\ExcelToLua.exe.config
+E:\GitHubProjects\ExcelExport\ExcelToLua\obj\Debug\ExcelToLua.exe
+E:\GitHubProjects\ExcelExport\ExcelToLua\obj\Debug\ExcelToLua.pdb
+E:\GitHubProjects\ExcelExport\ExcelToLua\bin\Debug\ExcelExport.exe.config
+E:\GitHubProjects\ExcelExport\ExcelExport\bin\Debug\ExcelExport.exe.config
+E:\GitHubProjects\ExcelExport\ExcelExport\bin\Debug\ExcelExport.exe
+E:\GitHubProjects\ExcelExport\ExcelExport\bin\Debug\ExcelExport.pdb
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelExport.csprojResolveAssemblyReference.cache
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelToLua.Form1.resources
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelExport.Properties.Resources.resources
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelExport.csproj.GenerateResource.Cache
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelExport.exe
+E:\GitHubProjects\ExcelExport\ExcelExport\obj\Debug\ExcelExport.pdb
