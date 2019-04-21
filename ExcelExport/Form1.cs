@@ -35,7 +35,6 @@ namespace ExcelToLua
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string foldPath = dialog.SelectedPath;
-                Generator.indir = foldPath;
                 indirTextBox.Text = foldPath;
 
                 //
@@ -61,19 +60,18 @@ namespace ExcelToLua
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string foldPath = dialog.SelectedPath;
-                Generator.outdir = foldPath;
                 outDirTextBox.Text = foldPath;
             }
         }
 
         private void generatorBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Generator.indir))
+            if (string.IsNullOrEmpty(indirTextBox.Text))
             {
                 MessageBox.Show("请选择excel文件目录");
                 return;
             }
-            if (string.IsNullOrEmpty(Generator.outdir))
+            if (string.IsNullOrEmpty(outDirTextBox.Text))
             {
                 MessageBox.Show("请选择导出目录");
                 return;
@@ -94,7 +92,18 @@ namespace ExcelToLua
             {
                 exportFiles.Add((string)item);
             }
-            Generator.Gen(generatorType, exportFiles);
+            switch (generatorType)
+            {
+                case "Lua":
+                    GenLua.Generator(exportFiles, outDirTextBox.Text);
+                    break;
+                case "Json":
+                    break;
+                case "Xml":
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void on_SelectAllBox_CheckChange(object sender, EventArgs e)
