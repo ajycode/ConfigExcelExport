@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ExcelToLua
+namespace ExcelExport
 {
     partial class Form1
     {

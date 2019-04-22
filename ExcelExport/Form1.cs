@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ExcelToLua
+namespace ExcelExport
 {
     public partial class Form1 : Form
     {
@@ -20,7 +20,7 @@ namespace ExcelToLua
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            String[] arr = new String[] { "Lua", "Json", "Xml" };
+            String[] arr = new String[] { "Lua", "Json" };
             for (int i = 0; i < arr.Length; i++)
             {
                 this.generatorTypeSelect.Items.Add(arr[i]);
@@ -39,11 +39,11 @@ namespace ExcelToLua
 
                 //
                 DirectoryInfo fdir = new DirectoryInfo(foldPath);
-                FileInfo[] files = fdir.GetFiles("*.xlsx");
+                FileInfo[] files = fdir.GetFiles().Where(s => s.Name.EndsWith(".xlsx") || s.Name.EndsWith(".xls")).ToArray();
                 fileCheckListBox.Items.Clear();
                 foreach (FileInfo file in files)
                 {
-                   fileCheckListBox.Items.Add(file.Name);
+                   fileCheckListBox.Items.Add(file.FullName);
                 }
                 bool isCheck = this.selectAllBox.Checked;
                 for (int i = 0; i < fileCheckListBox.Items.Count; i++)
@@ -98,8 +98,6 @@ namespace ExcelToLua
                     GenLua.Generator(exportFiles, outDirTextBox.Text);
                     break;
                 case "Json":
-                    break;
-                case "Xml":
                     break;
                 default:
                     break;

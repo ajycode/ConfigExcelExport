@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExcelToLua
+namespace ExcelExport
 {
     public static class GenLua
     {
         public static void Generator(List<string> files, string outDir)
         {
-            
+            Console.Clear();
+            Console.WriteLine(outDir);
         }
     }
 }

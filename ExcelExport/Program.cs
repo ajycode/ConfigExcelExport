@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ExcelToLua
+namespace ExcelExport
 {
     static class Program
     {
@@ -14,9 +11,12 @@ namespace ExcelToLua
         [STAThread]
         static void Main()
         {
+            DLLImport.AllocConsole();//调用系统API，调用控制台窗口
+            DLLImport.SetConsoleTitle("打印excel导出信息");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            DLLImport.FreeConsole();//释放控制台
         }
     }
 }
